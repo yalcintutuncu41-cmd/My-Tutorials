@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+            selector:pseudo class{
+            
+         }
+        */
+        /* imlec üzerindeyken*/
+        a:hover{
+            color: red;
+        }
+        /* link tıklanmadıysa*/
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: black;
+        }
+        /* tıklarken*/
+        a:active{
+            color: blue;
+        }
+        input{
+            font-size: 1.5em;
+            padding: 10px;
+            border: 2px,black,solid;
+            border-radius: 5px;
+
+        }
+        input:focus{
+            outline: 0;
+            border: 2px,red,solid;
+        }
+        #facebook{
+        display: inline-block;
+        margin-top: 50px;
+        font-size: 2.5em;
+        color: white;
+        background: blue;
+        padding: 10px;  
+        text-decoration: none;
+        border-radius: 5px;
+        }
+        #facebook:hover{
+            background: white;
+            color: blue;
+            border: 2px,blue,solid;
+          
+        }
+    </style>
+</head>
+<body>
+    <a href="#">This is a link</a>
+    <input type="text" placeholder="Name"><br>
+    <a href="#" id="facebook">Facebook</a>
+</body>
+</html>

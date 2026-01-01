@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*
+        p:nth-child(1){
+            background-color: red;
+        }
+        p:nth-child(3){
+            background-color: blue;
+        }
+        p:first-child{
+            color: blue;
+        }
+        p:last-of-type{
+            color: yellow; 
+        }
+        
+        p:nth-child(even){
+            background-color: red;
+        }
+        p:nth-child(odd){
+            background-color: blue;
+        } */
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        ul li:nth-child(2n){
+            color: red;
+        }
+        ul li:nth-child(2n+1){
+            color: blue;
+        }
+        ul li:nth-child(n+4){
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, voluptatibus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, consequuntur!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quod!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, recusandae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, nemo!</p>-->
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+
+    </ul>
+</body>
+</html>

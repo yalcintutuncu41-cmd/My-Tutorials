@@ -1,0 +1,85 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "about projects"
+    "footer footer";
+}
+header{
+    background-color: darkblue;
+    color: white;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    grid-area: header;
+}
+.header-container nav ul{
+    display: flex;
+}
+.header-container nav ul li a{
+    padding: 0.5rem;
+    color: white;
+}
+.header-container nav ul li a:hover{
+    background-color: red;
+    border-radius: 5px;
+}
+#about{
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: darkmagenta;
+    color: white;
+    flex-direction: column;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about img{
+    width: 80%;
+}
+#projects{
+    display: flex;
+    grid-area: projects;
+    padding: 20px;
+    flex-direction: column;
+    background-color: chocolate;
+    gap: 1rem;
+}
+#projects h2{
+    background-color: darkcyan;
+    border-radius: 1rem;
+}
+#projects li{
+    background-color: darkgreen;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+#contact{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 50%;
+    padding: 1rem;
+}
+#contact form button{
+    width: 10vw;
+    padding: 0.3rem;
+}

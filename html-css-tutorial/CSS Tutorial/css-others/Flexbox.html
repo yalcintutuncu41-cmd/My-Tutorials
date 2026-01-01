@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: #ffebc6;
+            text-align: center;
+            border: 1px,black,solid;
+            margin: 20px;
+        }
+
+        .container{
+            width: 75%;
+            background-color: black;
+            min-height: 500px; 
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* sütun düzeyinde düzenleme yapar*/
+            align-items: center; /*satır düzeyinde düzenleme yapar*/
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Article1</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+         <div class="box">
+            <h2>Article2</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+         <div class="box">
+            <h2>Article3</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</body>
+</html>
