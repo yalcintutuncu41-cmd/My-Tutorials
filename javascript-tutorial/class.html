@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Car {
+            constructor(color, brand) {
+                this.color = color;
+                this.brand = brand;
+            }
+
+            drive() {
+                console.log(this.brand + " gidiyor");
+            }
+        }
+
+        const car1 = new Car("red", "BMW");
+        const car2 = new Car("black", "Mercedes");
+
+        console.log(car1.color); // red
+        console.log(car2.brand); // Mercedes
+
+        car1.drive(); // BMW gidiyor
+    </script>
+</body>
+
+</html>
