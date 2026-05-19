@@ -1,3 +1,5 @@
+//map fonksiyonu örneği
+
 let isimler2 = [
     "Demet",
     "Ufuk",
