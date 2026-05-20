@@ -14,7 +14,7 @@ const car = {
 
 };
 
-/*Object properties call methods*/
+//Nesne özelliği çağırma
 
 car.brand;
 car["year"];
