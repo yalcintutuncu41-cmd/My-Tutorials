@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #box1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(156, 208, 104);
+            height: 15rem;
+            padding: 2rem;
+            gap: 1rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .variable {
+            background-color: #b71e1e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        <h3 id="Header">Simple Counter Application</h3>
+        <div class="buttons">
+            <button class="btn">+</button>
+            <h2>
+                <div class="variable">0</div>
+            </h2>
+            <button class="btn">-</button>
+        </div>
+
+    </div>
+
+    <script>
+        let count = 0;
+        const buttons = document.querySelectorAll(".btn");
+        const button1 = buttons[0];
+        const button2 = buttons[1];
+        const x = document.querySelector(".variable");
+        button1.addEventListener("click",()=>{
+            count++;
+            x.innerText = count;
+        })
+        button2.addEventListener("click",()=>{
+            count--;
+            x.textContent = count;
+        })
+        
+    </script>
+</body>
+
+</html>
